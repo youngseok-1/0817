@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .area {
+            width: 100px;
+            height: 100px;
+            border: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+    <!-- 문제: -->
+
+<!-- 다음 코드에서 area1 요소의 배경색을 변경하려고 합니다. 
+ 현재 코드에서 첫 번째 div 요소의 배경색이 파란색(skyblue)으로 변경되었습니다. 
+ 이 코드에서 두 번째 div 요소의 배경색을 lightgreen으로 변경하려면 어떻게 해야 할까요? -->
+    
+    <div id="area1" class="area">First div</div>
+    <div id="area2" class="area">Second div</div>
+
+    <script>
+        const $firstElem = document.getElementById('area1');
+        $firstElem.style.backgroundColor = 'skyblue';
+
+        const $secondElem = document.getElementById('area2');
+        $secondElem.style.backgroundColor = 'lightgreen';
+    </script>
+</body>
+</html>
